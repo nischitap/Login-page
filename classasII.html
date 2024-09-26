@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url("campus.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .login1 {
+        width: 150%;
+        height: 140%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .login2 {
+        width: 350px;
+        box-shadow: 0 0 15px rgba(179, 52, 52, 0.1);
+      }
+
+      .logo {
+        background-color: #800000;
+        padding: 20px;
+        text-align: center;
+        width: 350px;
+      }
+
+      .logo1 img {
+        width: 60px;
+      }
+
+      .info {
+        background-color: white;
+        padding: 20px;
+        color: rgb(87, 87, 87);
+        width: 350px;
+        max-height: max-content;
+        height: 270px;
+      }
+
+      h2 {
+        font-size: 14px;
+        font-weight: lighter;
+        margin-bottom: 10px;
+        color: rgb(87, 87, 87);
+      }
+
+      input[type="text"] {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #bfbcbc;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: rgb(73, 72, 72);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: grey;
+      }
+
+      a {
+        color: rgb(4, 102, 141);
+        text-decoration: none;
+        font-size: 12px;
+      }
+
+      a:hover {
+        color: rgb(149, 214, 242);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 14px;
+        color: rgb(87, 87, 87);
+      }
+
+      .username,
+      .forgotp {
+        margin-top: 20px;
+        text-align: center;
+      }
+      .forgotp {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login1">
+      <div class="login2">
+        <div class="logo">
+          <div class="logo1">
+            <img src="ulm_logo.png" alt="ULM Logo" />
+          </div>
+        </div>
+        <div class="info">
+          <h2>Username</h2>
+          <form>
+            <input type="text" />
+            <label> <input type="checkbox" /> Remember my username </label>
+            <br />
+            <button type="submit">Continue</button>
+          </form>
+          <div class="username">
+            <a href="https://ulm.onelogin.com/login2/?return=..."
+              >Enter the username part of your email address.</a
+            >
+          </div>
+          <div class="forgotp">
+            <a href="https://ulm.onelogin.com/login2/?return=..."
+              >| Forgot Password</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
